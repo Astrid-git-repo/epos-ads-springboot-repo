@@ -35,7 +35,7 @@ public class AdController {
 	
 	@GetMapping("/welcome/{name}")
 	  public String welcomeMessage(@PathVariable String name) {
-	    return "Hello There! Welcome "+name;
+	    return "Hello There! Welcome to this place Mr. "+name;
 	  }
 	
 }
