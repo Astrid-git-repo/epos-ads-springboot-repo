@@ -21,7 +21,7 @@ public class AdController {
 	@Autowired
 	private PromotionRepository promoRepository;
 	
-	//This endpoint gives a list of all stores
+	//This endpoint gives a list of all stores this is all
 	@GetMapping("/stores")
 	  public List <EPos_AD_Stores> getStores() {
 	    return storerepository.findAll();
@@ -35,7 +35,7 @@ public class AdController {
 	
 	@GetMapping("/welcome/{name}")
 	  public String welcomeMessage(@PathVariable String name) {
-	    return "Hello There! Welcome to this place Mr. "+name;
+	    return "Hello There! Welcome "+name;
 	  }
 	
 }
